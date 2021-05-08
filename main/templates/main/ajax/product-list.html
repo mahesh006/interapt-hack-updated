@@ -1,0 +1,15 @@
+{% for product in data %}
+<div class="col-lg-4 col-md-6 mb-4">
+	<div class="card shadow">
+	  <a href="/product/{{product.slug}}/{{product.id}}"><img src="/media/{{product.productattribute_set.first.image}}" class="card-img-top" alt="{{product.title}}"></a>
+	  <div class="card-body">
+	  
+	  </div>
+	  <div class="card-footer">
+		<h5 class="card-text"><a href="/product/{{product.slug}}/{{product.id}}">{{product.title}}</a></h5>
+	  	
+	  </div>
+	</div>
+</div>
+{% endfor %}
+			

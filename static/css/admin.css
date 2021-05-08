@@ -1,0 +1,28 @@
+#header{
+    height: 50px;
+    background-color: rgba(0, 81, 255, 0.842);   
+}
+#branding h1{
+ color: #fff;   
+ font-weight: 600;
+ font-size: 26px;
+}
+
+div.breadcrumbs{
+    background-color: rgba(146, 243, 19, 0.733);
+    color: black;
+}
+
+div.breadcrumbs a{
+    color: black;
+    font-weight: 600;
+}
+
+#user-tools{
+    font-size: 13px;
+}
+
+.module h2, .module caption, .inline-group h2{
+    background-color: rgba(155, 85, 221, 0.733);
+    font-weight: 600;
+}

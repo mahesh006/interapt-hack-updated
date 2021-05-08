@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<main class="container my-4">
+	<div class="col-md-9">
+	<!-- Featured Products -->
+	<h3 class="my-4 border-bottom pb-1"><span class="text-muted">Search result for</span> {{request.GET.s}}</h3>
+	<div class="row">
+    {% for project in data %}
+		<div class="col-md-3 mb-4">
+			<div class="card shadow">
+			  <a href="/project-employee-list/{{project.id}}"><img src="/media/{{project.image}}" class="card-img-top" alt="{{project.title}}"></a>
+			  <div class="card-body">
+			    <h6 class="card-text"><a href="/project-employee-list/{{project.id}}">{{project.title}}</a></h6>
+				<h6 class="card-text" id="event-box">Start Date: <a href="#">{{project.starttime}}</a></h6>
+			  </div>
+			  
+			</div>
+		</div>
+    {% endfor %}
+	</div>
+</div>
+</main>
+{% endblock %}
