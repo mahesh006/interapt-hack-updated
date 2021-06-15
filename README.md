@@ -1,4 +1,4 @@
 # interapt-hack
 Employee management Web application
 
-demo link : https://youtu.be/NBSAsFSmaaU
+demo video link : https://youtu.be/NBSAsFSmaaU
